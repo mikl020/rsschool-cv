@@ -1,2 +1,3 @@
-# rsschool-cv
-Моё CV — Markdown, HTML и CSS
+# Михаил Брик — CV
+
+[CV в Markdown](https://mikl020.github.io/rsschool-cv/cv)

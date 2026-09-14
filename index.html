@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Брик Михаил — начинающий frontend-разработчик. Навыки HTML, CSS, Figma, опыт дизайна карточек товаров и учебный проект CV.">
+  <title>Брик Михаил — Frontend и дизайн</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <div class="page">
+    <header>
+      <div class="topbar"><a class="brand" href="#">БМ<span> / CV</span></a>
+        <a href="mailto:web.designmikl020@gmail.com">Связаться ↗</a>
+      </div>
+      <nav aria-label="Разделы резюме">
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#experience">Опыт</a></li>
+          <li><a href="#projects">Проект</a></li>
+          <li><a href="#code">Код</a></li>
+          <li><a href="#education">Образование</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">FRONTEND · ДИЗАЙН</p>
+          <h1>Брик<br>Михаил<span>.</span></h1>
+          <p class="role">Начинающий frontend-разработчик</p>
+          <p class="intro">Развиваюсь в веб-разработке.<br>Привношу опыт работы с дизайном.</p>
+          <a class="button" href="mailto:web.designmikl020@gmail.com">Обсудить работу <span aria-hidden="true">↗</span></a>
+        </div>
+        <img class="portrait" src="assets/photo.png" alt="Портрет Михаила Брика" width="1152" height="1536">
+      </div>
+    </header>
+    <main id="main">
+      <div class="columns">
+        <aside class="sidebar" aria-label="Контакты и навыки">
+          <section id="contacts">
+            <h2>Контакты</h2>
+            <ul class="contacts">
+              <li><span>Email</span><a href="mailto:web.designmikl020@gmail.com">web.designmikl020@gmail.com</a></li>
+              <li><span>GitHub</span><a href="https://github.com/mikl020">mikl020</a></li>
+              <li><span>Telegram</span><a href="https://t.me/design_mikl020">@design_mikl020</a></li>
+              <li><span>Discord</span><strong>mishania2596</strong></li>
+            </ul>
+          </section>
+          <section id="skills">
+            <h2>Навыки</h2>
+            <ul class="skills">
+              <li><h3>HTML и CSS</h3><p>Уверенно использую со справочными материалами.</p></li>
+              <li><h3>JavaScript</h3><p>Базовые знания, продолжаю изучение.</p></li>
+              <li><h3>Git и GitHub</h3><p>Начальный уровень, работаю по инструкциям.</p></li>
+              <li><h3>VS Code и Figma</h3><p>Уверенное использование.</p></li>
+              <li><h3>Photoshop и Tilda</h3><p>Начальное знакомство.</p></li>
+            </ul>
+          </section>
+          <section id="languages">
+            <h2>Английский</h2>
+            <p>Начальный уровень. Самостоятельно изучаю английский, могу составлять простые предложения. Уровень по CEFR не подтверждён.</p>
+          </section>
+        </aside>
+        <div class="details">
+          <section id="about">
+            <p class="section-number">01 / ЗНАКОМСТВО</p>
+            <h2>Обо мне</h2>
+            <p>Начинающий frontend-разработчик с опытом создания карточек товаров для маркетплейсов в Figma. Ищу работу, где смогу совмещать веб-разработку и дизайн, повышать квалификацию и получать практический опыт. Изучаю веб-программирование на курсах Softtrade. В дальнейшем планирую освоить backend-разработку.</p>
+          </section>
+          <section id="experience">
+            <p class="section-number">02 / ПРАКТИКА</p>
+            <h2>Опыт</h2><h3>Дизайн карточек товаров</h3>
+            <p class="muted">Фриланс · Figma</p><p>Создавал карточки товаров для маркетплейсов. Работал над дизайном в Figma.</p>
+          </section>
+          <section id="projects">
+            <p class="section-number">03 / УЧЕБНЫЙ ПРОЕКТ</p>
+            <h2>Этот сайт — мой проект</h2>
+            <div class="project">
+              <h3>Персональное CV</h3>
+              <p>Резюме в двух форматах: Markdown и адаптивная веб-страница на HTML и CSS. Разработка в VS Code, работа с версиями через Git и GitHub.</p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Markdown</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/mikl020/rsschool-cv/tree/rsschool-cv-html">Исходный код ↗</a>
+                <a href="https://mikl020.github.io/rsschool-cv/">Открыть сайт ↗</a>
+              </div>
+            </div>
+          </section>
+          <section id="code">
+            <p class="section-number">04 / JAVASCRIPT</p>
+            <h2>Пример кода</h2>
+            <h3><a href="https://www.codewars.com/kata/526571aae218b8ee490006f4">Bit Counting · Codewars ↗</a></h3>
+            <p>Моё решение: подсчёт единиц в двоичной записи неотрицательного целого числа.</p>
+            <pre>
+              <code>
+                                function countBits(n) {
+                  const binary = n.toString(2);
+                  let count = 0;
+
+                  for (let i = 0; i &lt; binary.length; i++) {
+                    if (binary[i] === &#x27;1&#x27;) {
+                      count++;
+                    }
+                  }
+
+                  return count;
+                }
+              </code>
+            </pre>
+            <p class="code-note">Например, countBits(7) возвращает 3: двоичная запись числа 7 — 111.</p>
+          </section>
+          <section id="education">
+            <p class="section-number">05 / ОБУЧЕНИЕ</p>
+            <h2>Образование</h2>
+            <div class="education-item">
+              <p class="date">АВГУСТ 2026 — НАСТОЯЩЕЕ ВРЕМЯ</p>
+              <h3>Softtrade</h3>
+              <p>Курсы веб-программирования.</p>
+            </div>
+            <div class="education-item">
+              <p class="date">ВЫПУСК 2022 · 4 ГОДА ОБУЧЕНИЯ</p>
+              <h3>Карагандинский высший политехнический колледж</h3>
+              <p>Среднее специальное образование. Направление: микроэлектроника и мобильные устройства.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://github.com/mikl020">© 2026  Брик Михаил · GitHub ↗</a>
+      <a class="school" href="https://rs.school/courses/javascript-ru">
+        <img src="assets/rs-school-logo.svg" alt="RS School — курс JavaScript / Front-end" width="90" height="34"></a>
+    </footer>
+  </div>
+</body>
+</html>
